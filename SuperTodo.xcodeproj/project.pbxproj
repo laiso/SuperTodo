@@ -261,7 +261,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+			shellScript = "# Run the unit tests in this test bundle.\n#\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n\"${PROJECT_DIR}/Scripts/run_sim_app_tests.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -412,6 +412,7 @@
 				GCC_PREFIX_HEADER = "SuperTodo/SuperTodo-Prefix.pch";
 				INFOPLIST_FILE = "SuperTodoTests/SuperTodoTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -429,6 +430,7 @@
 				GCC_PREFIX_HEADER = "SuperTodo/SuperTodo-Prefix.pch";
 				INFOPLIST_FILE = "SuperTodoTests/SuperTodoTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};

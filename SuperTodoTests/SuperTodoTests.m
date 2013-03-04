@@ -7,6 +7,7 @@
 //
 
 #import "SuperTodoTests.h"
+#import "AppDelegate.h"
 
 @implementation SuperTodoTests
 
@@ -26,7 +27,9 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in SuperTodoTests");
+  AppDelegate* app = [[UIApplication sharedApplication] delegate];
+  STAssertNotNil(app, nil);
+  STAssertEquals(app.window, [UIApplication sharedApplication].keyWindow, nil);
 }
 
 @end
