@@ -56,7 +56,6 @@
 		07DDF3B116E4AA870046252A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		07DDF3B916E4AA870046252A /* SuperTodoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SuperTodoTests-Info.plist"; sourceTree = "<group>"; };
 		07DDF3BB16E4AA870046252A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		07DDF3BD16E4AA870046252A /* SuperTodoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperTodoTests.h; sourceTree = "<group>"; };
 		07DDF3BE16E4AA870046252A /* SuperTodoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperTodoTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,7 +143,6 @@
 		07DDF3B716E4AA870046252A /* SuperTodoTests */ = {
 			isa = PBXGroup;
 			children = (
-				07DDF3BD16E4AA870046252A /* SuperTodoTests.h */,
 				07DDF3BE16E4AA870046252A /* SuperTodoTests.m */,
 				07DDF3B816E4AA870046252A /* Supporting Files */,
 			);
@@ -455,6 +453,7 @@
 				07DDF3C416E4AA870046252A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07DDF3C516E4AA870046252A /* Build configuration list for PBXNativeTarget "SuperTodoTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +462,7 @@
 				07DDF3C716E4AA870046252A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

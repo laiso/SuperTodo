@@ -1,34 +1,26 @@
-//
-//  SuperTodoTests.m
-//  SuperTodoTests
-//
-
-//  Copyright (c) 2013 laiso. All rights reserved.
-//
-
-#import "SuperTodoTests.h"
+#import <SenTestingKit/SenTestingKit.h>
 #import "AppDelegate.h"
+
+@interface SuperTodoTests: SenTestCase
+@end
 
 @implementation SuperTodoTests
 
-- (void)setUp
+- (void)testTest
 {
-    [super setUp];
-    
-    // Set-up code here.
+  STAssertEquals(1+1, 2, @"1+1=2");
 }
 
-- (void)tearDown
-{
-    // Tear-down code here.
-    
-    [super tearDown];
-}
-
-- (void)testExample
+- (void)testAppDelegateInstanceIsNotNil
 {
   AppDelegate* app = [[UIApplication sharedApplication] delegate];
   STAssertNotNil(app, nil);
+}
+
+- (void)testWindowEqualKeyWindow
+{
+  AppDelegate* app = [[UIApplication sharedApplication] delegate];
+  STAssertNotNil(app.window, nil);
   STAssertEquals(app.window, [UIApplication sharedApplication].keyWindow, nil);
 }
 
